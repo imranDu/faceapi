@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "repository" : { 
+   "type" : "git",
+   "url" : "https://github.com/npm/npm.git"
+ },
   "scripts": {
     "start": "nodemon server.js"
   },
