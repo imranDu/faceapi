@@ -18,7 +18,9 @@ const db = knex({
 const app = express();
 
 app.use(bodyParser.json());
-app.use(cors())
+app.use(cors({
+  origin: 'https://git.heroku.com/face-s.git'
+}));
 app.get('/',(req,res)=>{
 	res.send("db.users");
 })
